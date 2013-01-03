@@ -3,8 +3,6 @@ from bs4 import BeautifulSoup
 import os
 import re
 import string
-import math
-import Image
 
 
 def main():
@@ -60,16 +58,12 @@ def readxml(filename):
             team2SpawnPoint = team2.find_all("position")
 
             print "spawn points:"
-            counter = 1
             for spawn in team1SpawnPoint:
                 x, y = getCoords(spawn.contents[0]);
                 print "team 1:\t" + str(x) + "\t" + str(y)
-                counter += 1
-            counter = 1
             for spawn in team2SpawnPoint:
                 x, y = getCoords(spawn.contents[0]);
                 print "team 2:\t" + str(x) + "\t" + str(y)
-                counter += 1
 
     if ass != None:
         print "ASS"
@@ -85,16 +79,12 @@ def readxml(filename):
             team2SpawnPoint = team2.find_all("position")
 
             print "spawn points:"
-            counter = 1
             for spawn in team1SpawnPoint:
                 x, y = getCoords(spawn.contents[0]);
                 print "team 1:\t" + str(x) + "\t" + str(y)
-                counter += 1
-            counter = 1
             for spawn in team2SpawnPoint:
                 x, y = getCoords(spawn.contents[0]);
                 print "team 2:\t" + str(x) + "\t" + str(y)
-                counter += 1
 
     if dom != None:
         print "DOM"
@@ -108,16 +98,12 @@ def readxml(filename):
         team2SpawnPoint = team2.find_all("position")
 
         print "spawn points:"
-        counter = 1
         for spawn in team1SpawnPoint:
             x, y = getCoords(spawn.contents[0]);
             print "team 1:\t" + str(x) + "\t" + str(y)
-            counter += 1
-        counter = 1
         for spawn in team2SpawnPoint:
             x, y = getCoords(spawn.contents[0]);
             print "team 2:\t" + str(x) + "\t" + str(y)
-            counter += 1
 
     print "\n"
 

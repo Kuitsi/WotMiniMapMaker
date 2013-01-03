@@ -1,3 +1,5 @@
+An example of maps made with this tool can be found at http://gamingrobot.net/projects/wotminimaps/
+
 First time:
 - remove FolderHolder.txt files
 - extract icons from res/packages/gui.pkg/gui/flash/Minimap.swf with SWFExtract into icon/
@@ -45,3 +47,7 @@ Linux:
   - copyRawMaps.sh
   - compressMaps.sh
   - renameJpg.sh
+
+Debugging
+- getCoordinates.py lists coordinates of spawn points, bases and map bounding boxes. You
+  can use it after arena defs are copied from WoT folder and made readable with xmlconverter
