@@ -45,6 +45,7 @@ do
 	"45") NAME="highway"; ;;
 	"47") NAME="serene_coast"; ;;
 	"51") NAME="dragon_ridge"; ;;
+	"53") NAME="hidden_village"; ;;
 	"60") NAME="pearl_river"; ;;
 	"63") NAME="tundra"; ;;
 	"73") NAME="sacred_valley"; ;;
