@@ -8,6 +8,7 @@ import Image
 
 # both x and y dimensions are equal
 targetMapSize = 500.0
+iconSize = 64.0
 
 def main():
     for filename in os.listdir("arena_defs_decoded"):
@@ -177,9 +178,9 @@ def convertScaleToXY(input, oldScale):
     x = inx / oldMaxX * newScale
     y = iny / oldMaxY * newScale
 
-    # set icon (64x64 pixels) center at coordinates
-    x -= 32.0
-    y += 32.0
+    # set icon center at coordinates
+    x -= iconSize / 2
+    y += iconSize / 2
 
     return float(x), float(y)
 
