@@ -19,6 +19,7 @@ rm -vrf ./arena_defs/_common_.xml
 rm -vrf ./arena_defs/_default_.xml
 rm -vrf ./arena_defs/_list_.xml
 rm -vrf ./arena_defs/00_tank_tutorial.xml
+rm -vrf ./arena_defs/59_asia_great_wall.xml # this is exclusively on china's servers
 
 python ./fixdefnames.py
 
