@@ -49,6 +49,7 @@ do
 	"60") NAME="pearl_river"; ;;
 	"63") NAME="tundra"; ;;
 	"73") NAME="sacred_valley"; ;;
+	"83") NAME="kharkov"; ;;
 	"84") NAME="windstorm"; ;;
 	"85") NAME="severogorsk"; ;;
 	"86") NAME="winter_himmelsdorf"; ;;
