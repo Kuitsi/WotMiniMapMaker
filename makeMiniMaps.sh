@@ -21,6 +21,7 @@ rm -vrf ./arena_defs/_list_.xml
 rm -vrf ./arena_defs/00_tank_tutorial.xml
 rm -vrf ./arena_defs/59_asia_great_wall.xml # this is exclusively on china's servers
 rm -vrf ./arena_defs/99_himmelball.xml # Football special
+rm -vrf ./arena_defs/hangar_premium_wg_bday.xml
 
 python ./fixdefnames.py
 
