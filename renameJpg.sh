@@ -54,6 +54,7 @@ do
 	"85") NAME="severogorsk"; ;;
 	"86") NAME="winter_himmelsdorf"; ;;
 	"87") NAME="ruinberg_on_fire"; ;;
+	"92") NAME="stalingrad"; ;;
 	"96") NAME="fiery_salient"; ;;
 	*)
 		echo "WARNING: Unknown map ID" $ID
