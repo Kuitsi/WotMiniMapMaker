@@ -4,7 +4,7 @@ for file in ./jpg/*
 do
 	BN=`basename "${file}" .jpg`
 
-	# destroy all but map id and game mode from file name
+	# extract map id and game mode from file name
 	IDMODE=`echo $BN | sed -r 's/_.*_/_/'`
 
 	ID=(`echo $IDMODE | cut -d "_" -f 1`)
@@ -55,7 +55,10 @@ do
 	"86") NAME="winter_himmelsdorf"; ;;
 	"87") NAME="ruinberg_on_fire"; ;;
 	"92") NAME="stalingrad"; ;;
+	"95") NAME="ghost_town"; ;;
 	"96") NAME="fiery_salient"; ;;
+	"100") NAME="mittengard"; ;;
+	"103") NAME="winterberg"; ;;
 	*)
 		echo "WARNING: Unknown map ID" $ID
 		continue;

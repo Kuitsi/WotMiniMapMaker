@@ -20,6 +20,7 @@ rm -vrf ./arena_defs/_default_.xml
 rm -vrf ./arena_defs/_list_.xml
 rm -vrf ./arena_defs/00_tank_tutorial.xml
 rm -vrf ./arena_defs/59_asia_great_wall.xml # this is exclusively on china's servers
+rm -vrf ./arena_defs/109_battlecity_ny.xml # special 8-bit map
 rm -vrf ./arena_defs/_deathtrack_10.xml
 rm -vrf ./arena_defs/hangar_*.xml
 

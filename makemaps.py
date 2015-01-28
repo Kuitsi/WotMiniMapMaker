@@ -10,6 +10,8 @@ import Image
 targetMapSize = 500.0
 iconSize = 64.0
 
+r = re.compile("(.*)_([0-9]{2,3}).xml")
+
 def main():
     for filename in os.listdir("arena_defs_decoded"):
         readxml(filename)
@@ -22,16 +24,16 @@ def readxml(filename):
     #close file because we dont need it anymore:
     file.close()
 
-    filenum = filename[-6:-4]
-    filename = filenum + '_' + filename[:-7]
+    m = r.search(filename)
+    filename = m.group(2) + '_' + m.group(1)
     print filename
 
     soup = BeautifulSoup(data, 'xml')
 
     bottomLeft = soup.find("bottomLeft").contents
     upperRight = soup.find("upperRight").contents
-    x2, y2 = string.split(bottomLeft[0])
-    x1, y1 = string.split(upperRight[0])
+    x2, y2 = string.split(bottomLeft[0].replace(',', '.'))
+    x1, y1 = string.split(upperRight[0].replace(',', '.'))
     x2, y2 = float(x2), float(y2)
     x1, y1 = float(x1), float(y1)
 
