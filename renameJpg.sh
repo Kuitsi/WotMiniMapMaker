@@ -58,6 +58,7 @@ do
 	"95") NAME="ghost_town"; ;;
 	"96") NAME="fiery_salient"; ;;
 	"100") NAME="mittengard"; ;;
+	"101") NAME="overlord"; ;;
 	"103") NAME="winterberg"; ;;
 	*)
 		echo "WARNING: Unknown map ID" $ID
