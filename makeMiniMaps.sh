@@ -23,6 +23,7 @@ rm -vrf ./arena_defs/59_asia_great_wall.xml # this is exclusively on china's ser
 rm -vrf ./arena_defs/109_battlecity_ny.xml # special 8-bit map
 rm -vrf ./arena_defs/_deathtrack_10.xml
 rm -vrf ./arena_defs/hangar_*.xml
+rm -vrf ./arena_defs/h01_bday_2015.xml
 
 python ./fixdefnames.py
 
