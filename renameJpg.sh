@@ -39,7 +39,7 @@ do
 	"37") NAME="mountain_pass"; ;;
 	"38") NAME="arctic_region"; ;;
 	"39") NAME="south_coast"; ;;
-#	"42") NAME="port"; ;;
+	"42") NAME="port"; ;;
 	"43") NAME="northwest"; ;;
 	"44") NAME="live_oaks"; ;;
 	"45") NAME="highway"; ;;
@@ -60,6 +60,7 @@ do
 	"100") NAME="mittengard"; ;;
 	"101") NAME="overlord"; ;;
 	"103") NAME="winterberg"; ;;
+	"114") NAME="pilsen"; ;;
 	*)
 		echo "WARNING: Unknown map ID" $ID
 		continue;
